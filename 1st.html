@@ -1,0 +1,92 @@
+<html>
+<head>
+<style>
+body {
+
+ animation-name: example;
+animation-duration: 10s;
+ background-image: url("2957.jpg");
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center;
+text-align:center;
+font-size:60;
+height:650;
+font-family: courier;
+color:rgb(128, 128, 128);
+
+}
+@keyframes example {
+    from {background-image: url("23.jpg");}
+    to {background-image:url("2957.jpg") ;}
+    
+
+h1
+{
+text-align:center;
+ 	color:rgb(128, 128, 128);;
+font-size:60;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.c{margin-top:20px;}
+
+.a{margin-top:80px;
+font-size:30;font-weight:bold;
+text-align:center;}
+.b{
+	text-align:center;
+color: red;
+font-family: courier}
+.d{
+	font-size: 30;
+	color: blue;
+
+}
+</style>
+<title>LOGIN</title>
+</head>
+<body>
+<br>
+<br>
+<h1>SWEET SHOP</h1>
+<div class="a"><form action="loginVerification.html">
+USERNAME:<br> <INPUT TYPE="text" id='uname'  placeholder="eg.santhosh"><br><br>
+PASSWORD:<br>
+ <INPUT TYPE="password" id="password" placeholder="eg.santhoshkhan"><br>
+
+</form></div>
+<script>
+function check()
+{
+var uname1=document.getElementById("uname").value;
+var uname2="sandy";
+var count=0;
+var pass1=document.getElementById("password").value;
+var pass2="passs";
+if(uname1==uname2)
+count++;
+if(pass1==pass2)
+count++;
+if(count==2)
+window.location.href="2nd.html";
+else
+alert("Invalid Useranme or Password");
+
+
+}
+
+</script>
+<button type="button" onclick="check()"> SIGN IN</button><br><br>
+<p id="demo">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='non'">Click Me!</button>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body
+{
+	text-align: center;
+animation-name: example;
+animation-duration: 10s;
+ background-image: url("2957.jpg");
+ font-family:courier;
+ color:rgb(128, 128, 128);
+ font-size: 30;
+	
+}
+	@keyframes example {
+    from {background-image: url("23.jpg");}
+    to {background-image:url("2957.jpg") ;}
+.a{
+	text-align: center;
+font-size: 40;
+
+color:rgb(128, 128, 128);
+font-family:courier; 
+}
+.b
+{
+	font-size: 30;
+	font-style: timesnewroman;
+	color:white;
+	font-family:courier;
+}
+.san {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
